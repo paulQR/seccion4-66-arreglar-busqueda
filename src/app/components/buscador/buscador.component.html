@@ -11,7 +11,13 @@
 </div>
 
 <div class="card-columns">
+      <!-- seccion 4 - 65 output-->
+      <!--
       <app-heroe-tarjeta [heroe]="foo" [index]="i" *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+      -->
+
+      <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes"></app-heroe-tarjeta>    
+
       <!--
       <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
             <div style="border-style: groove; border-width: 3px; width:45%;   height:200px; margin-left:30%; margin-top:40px !important;"></div>
